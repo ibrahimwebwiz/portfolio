@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Web Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 30);
+            color: white;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+        nav ul li a:hover{
+            color: aqua;
+
+        }
+        .left{
+            font-size: 2rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px;
+        }
+        .firstsectiondiv{
+            width: 40px;
+        }
+        .ibi{
+            color:rgb(79, 15, 139);
+        }
+       
+
+        .leftsection {
+            margin: 30px;
+            font-size: 3rem;
+        }
+        element{
+            color:rgb(79, 15, 139);   
+        }
+        .footer{
+            background-color: rgb(2, 2, 23);
+            height: 200px;
+            padding: 23;
+        }
+        .footer{
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-around;
+        }
+        .footer div ul{
+            list-style: none;
+            justify-content: right;
+            
+            
+        }
+        .footer div {
+            justify-content: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ibrahim's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="home.html">Home</li></a>
+                    <li><a href="about.html">About</li></a>
+                    <li><a href="services.html">Services</li></a>
+                   <li><a href="projects.html">Projects</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My Name Is <span class="ibi">Ibrahim</span>
+                <div>And I Am A Passionate</div>
+                <span id="element"></span> 
+
+            </div>
+            
+
+            <div class="rightsection">
+            <img src="pg.png.png" width="400">
+            </div>
+        </section>
+        <hr>
+        <hr>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'Web Designer.','Graphic Designer','Video Editor','Photo Editor'],
+          typeSpeed: 50,
+        });
+      </script>
+      <footer class="footer">
+        <div class="f-1st"></div>
+        <h1>Ibrahim's Portfolio</h1>
+        
+        
+        <div class="f-3rd">CopyRight Ibrahim' Web Portfolio</div>
+        <div class="f-4th">ALL RIGHTS RESERVED</div>
+      </footer>
+
+
+</body>
+
+</html>
